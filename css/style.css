@@ -1,0 +1,61 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: black; }
+  body .main, html .main {
+    background-image: url("../todoapp-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 20px; }
+    body .main .header, html .main .header {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .main .header .title, html .main .header .title {
+        font-size: 2.8em; }
+    body .main .body, html .main .body {
+      height: calc(100% - 100px);
+      display: flex; }
+      body .main .body .left, html .main .body .left {
+        width: 280px;
+        height: 100%;
+        border: 2px solid white;
+        background-color: rgba(255, 255, 255, 0.1); }
+        body .main .body .left .lists, html .main .body .left .lists {
+          background-color: rgba(255, 255, 255, 0.2);
+          padding: 0 15px; }
+          body .main .body .left .lists div span, html .main .body .left .lists div span {
+            background-color: inherit; }
+        body .main .body .left .newList, html .main .body .left .newList {
+          background-color: inherit;
+          color: white;
+          margin: 10px 10px 0 10px;
+          width: 90%; }
+        body .main .body .left i, html .main .body .left i {
+          margin: 0 15px;
+          font-size: .7em; }
+        body .main .body .left .subtext, html .main .body .left .subtext {
+          font-size: .7em;
+          margin: 0 10px; }
+      body .main .body .right, html .main .body .right {
+        width: calc(100% - 280px);
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1.5em; }
+        body .main .body .right .listTitle, html .main .body .right .listTitle {
+          border: 1px gray;
+          display: flex; }
+        body .main .body .right .task, html .main .body .right .task {
+          background-color: inherit;
+          width: 100%;
+          color: white; }
+          body .main .body .right .task div, html .main .body .right .task div {
+            background-color: inherit; }
+            body .main .body .right .task div input, html .main .body .right .task div input {
+              width: 100%;
+              color: white; }
